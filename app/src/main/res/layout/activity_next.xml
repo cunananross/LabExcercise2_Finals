@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cunanan.labexcercise1_finals.Next">
+
+    <Button
+        android:id="@+id/Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Load Shared Preferences"
+        android:onClick="ShareDis"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="41dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Internal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load Internal Storage"
+        android:onClick="InternalDis"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="122dp"
+        android:layout_below="@+id/Share"
+        android:layout_alignLeft="@+id/Share"
+        android:layout_alignStart="@+id/Share"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:onClick="Clear"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:layout_below="@+id/Internal"
+        android:layout_alignLeft="@+id/Internal"
+        android:layout_alignStart="@+id/Internal"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="GoBack"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="275dp"
+        android:layout_alignBaseline="@+id/Clear"
+        android:layout_alignBottom="@+id/Clear"
+        android:layout_toRightOf="@+id/Clear"
+        android:layout_toEndOf="@+id/Clear"
+        android:layout_marginLeft="87dp"
+        android:layout_marginStart="87dp" />
+
+    <TextView
+        android:id="@+id/tv_Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Back"
+        android:layout_alignStart="@+id/Back"
+        android:layout_below="@+id/Back"
+        android:layout_marginTop="45dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Display"
+        android:layout_marginTop="26dp"
+        android:layout_toEndOf="@+id/tv_Display"
+        android:layout_toRightOf="@+id/tv_Display"
+        android:text="" />
+</RelativeLayout>

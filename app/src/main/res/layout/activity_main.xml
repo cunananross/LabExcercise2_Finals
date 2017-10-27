@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cunanan.labexcercise1_finals.MainActivity">
+
+    <Button
+        android:id="@+id/SharedPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        tools:layout_editor_absoluteY="269dp"
+        tools:layout_editor_absoluteX="43dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/et_Password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Share"
+        />
+
+    <Button
+        android:id="@+id/InternalStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internal storage"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/SharedPreferences"
+        android:layout_alignLeft="@+id/SharedPreferences"
+        android:layout_alignStart="@+id/SharedPreferences"
+        android:onClick="Internal"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SharedPreferences"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/SharedPreferences"
+        android:layout_marginTop="53dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Password"
+        android:layout_below="@+id/et_Username"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name" />
+
+    <EditText
+        android:id="@+id/et_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignBottom="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_alignBaseline="@+id/Password"
+        android:layout_alignBottom="@+id/Password"
+        android:layout_alignLeft="@+id/et_Username"
+        android:layout_alignStart="@+id/et_Username" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InternalStorage"
+        android:layout_alignStart="@+id/InternalStorage"
+        android:layout_below="@+id/InternalStorage"
+        android:layout_marginTop="16dp"
+        android:text="Next"
+        android:onClick="goNext"
+        />
+
+</RelativeLayout>
